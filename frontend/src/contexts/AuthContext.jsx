@@ -89,7 +89,7 @@ export const AuthProvider = ({ children }) => {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${token}` // ✅ include JWT
+                    'Authorization': `Bearer ${token}`
                 }
             });
 
