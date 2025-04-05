@@ -76,7 +76,7 @@ export const AuthProvider = ({ children }) => {
             });
 
             if (!res.ok) {
-                return "Invalid username or password";
+                return "Invalid credentials";
             }
 
             const data = await res.json();
@@ -129,7 +129,7 @@ export const AuthProvider = ({ children }) => {
             });
 
             if (res.status === 409) {
-                return "Username already exists.";
+                return "User Name already exists";
             }
     
             if (!res.ok) {
